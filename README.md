@@ -5,7 +5,7 @@
 
 Ticket sales system for events, built with **Java 25 (LTS)** and **Maven**. It models the full purchase flow: quantity validation, stock verification, monetary-precise total calculation (`BigDecimal`), and payment processing with customer notification.
 
-## Architecture
+# Architecture
 
 The project implements a **Pure Entity Core**, following **Clean Architecture** principles (Ports and Adapters):
 
@@ -19,12 +19,12 @@ The project implements a **Pure Entity Core**, following **Clean Architecture** 
 
 This separation allows the **business core to be tested in isolation** (without infrastructure mocks) and notification adapters (SMS, email, console, etc.) to be added or replaced without modifying the business rules.
 
-## Requirements
+# Requirements
 
 - JDK 25 (LTS)
 - Maven 3.9+
 
-## Execution Commands
+ Execution Commands
 
 From the project root (where `pom.xml` is located):
 
@@ -39,7 +39,7 @@ mvn test
 mvn package
 ```
 
-## Project Structure
+# Project Structure
 
 ```
 neonpulse
